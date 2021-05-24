@@ -16,6 +16,6 @@ for i in comp_rate_array:
     #  リサイズ
     img_rewrite = cv.resize(img_origin,(width_rewrite,height_rewrite))
     #  保存
-    TITLE = "div_1/" +str(i) + ".jpg"
+    TITLE = "niku_div_" +str(i) + ".jpg"
     cv.imwrite(os.path.join(SAVE_DIR,TITLE),img_rewrite)
 
