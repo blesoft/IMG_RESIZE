@@ -14,7 +14,7 @@ for i in comp_rate_array:
     height_rewrite = int(height_origin / i)
     width_rewrite  = int(width_origin / i)
     #  リサイズ
-    img_rewrite = cv.resize(img_origin,(height_rewrite,width_rewrite))
+    img_rewrite = cv.resize(img_origin,(width_rewrite,height_rewrite))
     #  保存
     TITLE = "div" +str(i) + "_.jpg"
     cv.imwrite(os.path.join(SAVE_DIR,TITLE),img_rewrite)
